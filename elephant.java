@@ -25,6 +25,16 @@ public class Elephant extends Actor
             move(+1);
         }
         
+        eat();
+    }
+    
+    public void eat()
+    {
+        if(isTouching(Pie.class))
+        {
         removeTouching(Pie.class);
+        MyWorld World = (MyWorld) getWorld();
+        World.createPie();
+        }   
     }
 }
