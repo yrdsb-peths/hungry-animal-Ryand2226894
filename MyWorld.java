@@ -21,7 +21,14 @@ public class MyWorld extends World
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 200);
         
-        Pie pie = new Pie();
-        addObject(pie, 300, 0);
+        createPie();
+    }
+    
+    public  void createPie()
+    {
+       Pie pie = new Pie();
+       int x = Greenfoot.getRandomNumber(600);
+       int y = 0;
+    addObject(pie, x, y); 
     }
 }
