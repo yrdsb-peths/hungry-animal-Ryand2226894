@@ -27,7 +27,11 @@ public class MyWorld extends World
         
         createPie();
     }
-    
+     public void gameOver()
+     {
+         Label gameOverLabel = new Label("game over",100);
+         addObject(gameOverLabel, 300, 200);
+     }
     
     public void increaseScore()
     {
