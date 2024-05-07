@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Pie here.
+ * food for the hero(elephant)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Ryan
+ * @version 2024
  */
 public class Pie extends Actor
 {
@@ -15,5 +15,6 @@ public class Pie extends Actor
     public void act()
     {
         // Add your action code here.
+        setLocation(getX(), getY() + 1);
     }
 }
