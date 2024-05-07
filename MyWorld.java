@@ -19,6 +19,9 @@ public class MyWorld extends World
         super(600, 400, 1);
         
         Elephant elephant = new Elephant();
-        addObject(elephant, 300, 300);
+        addObject(elephant, 300, 200);
+        
+        Pie pie = new Pie();
+        addObject(pie, 300, 0);
     }
 }
