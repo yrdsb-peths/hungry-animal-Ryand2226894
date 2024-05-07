@@ -17,10 +17,10 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
+        super(600, 400, 1, false);
         
         Elephant elephant = new Elephant();
-        addObject(elephant, 300, 200);
+        addObject(elephant, 300, 300);
         
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 40 , 40);
