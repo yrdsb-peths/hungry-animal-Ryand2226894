@@ -35,6 +35,7 @@ public class Elephant extends Actor
         removeTouching(Pie.class);
         MyWorld World = (MyWorld) getWorld();
         World.createPie();
+        World.increaseScore();
         }   
     }
 }
