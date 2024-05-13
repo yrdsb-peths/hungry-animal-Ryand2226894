@@ -8,7 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Elephant extends Actor
 {
-    GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3)
+    GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3");
+    GreenfootImage[] idle = new GreenfootImage 
+    
+    
+    public Elephant()
+    {
+        for(int i = 0; i < 8; i++)
+        {
+            
+        }
+        setImage(idle);
+    }
     public void act()
     {
         // Add your action code here.
@@ -33,6 +44,7 @@ public class Elephant extends Actor
         MyWorld World = (MyWorld) getWorld();
         World.createPie();
         World.increaseScore();
+        elephantSound.play();
         }   
     }
 }
