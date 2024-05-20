@@ -29,6 +29,6 @@ public class Pie extends Actor
     }
     public void setSpeed(int spd)
     {
-        
+        speed = spd;
     }
 }
