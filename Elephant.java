@@ -88,3 +88,4 @@ else if(Greenfoot.isKeyDown("right"))
         }   
     }
 }
+
